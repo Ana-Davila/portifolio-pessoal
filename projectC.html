@@ -7,6 +7,48 @@
     <title>Projeto Login</title>
     <style>
         @charset "UTF-8";
+        @media (max-width: 600px) {
+            body {
+                padding-left: 4vw;
+                padding-right: 4vw;
+            }
+
+            main {
+                max-width: 100vw;
+                padding: 5px;
+            }
+
+            .title {
+                font-size: 1.5rem;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding: 0 2px;
+            }
+
+            .parag {
+                font-size: 0.95rem;
+                text-indent: 5px;
+                line-height: 1.4;
+                padding: 0 2px;
+            }
+
+            .imgs,
+            img {
+                width: 100%;
+                max-width: 98vw;
+                height: auto;
+                margin: 10px auto;
+                display: block;
+            }
+
+            .btn-projeto {
+                font-size: 0.95rem;
+                padding: 10px 5px;
+                max-width: 100%;
+                margin: 10px auto;
+            }
+
+        }
 
         :root {
             --azul1: #011526;
@@ -39,7 +81,7 @@
             margin-right: auto;
         }
 
-        .title{
+        .title {
             font-size: 3rem;
             margin-top: 45px;
             margin-bottom: 45px;
@@ -60,15 +102,16 @@
             margin-left: auto;
             margin-right: auto;
         }
-        main img{
+
+        main img {
             display: block;
-            margin-top: 50px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 900px;
+            margin: 30px auto 20px auto;
+            width: 100%;
+            max-width: 900px;
+            height: auto;
         }
 
-        main a{
+        main a {
             display: block;
             margin-top: 10px;
             color: var(--azul4);
@@ -80,8 +123,30 @@
             text-decoration: underline;
         }
 
-        min p a:visited {
+        main p a:visited {
             color: var(--azul2);
+        }
+        .btn-projeto {
+            font-size: 0.95rem;
+            padding: 10px 5px;
+            max-width: 100%;
+            margin: 10px auto;
+            text-align: center;
+            background-color: var(--azul4);
+            color: white;
+            border-radius: 5px;
+        }
+        .btn-projeto:hover {
+            background-color: var(--azul5);
+        }   
+        .btn-projeto:visited {
+            color: var(--azul2);
+        }
+        main p a:visited {
+            color: var(--azul2);
+        }
+        main p a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -117,9 +182,11 @@
             Além do botão de envio, que se destaca com uma cor de fundo verde e muda para um tom mais escuro ao passar o
             mouse, a página também oferece um link para recuperação de senha, proporcionando uma solução prática para
             usuários que possam ter esquecido suas credenciais.</p>
-        <img src="imagens/img-login.png" alt="Imagem do projeto login finalizado" title="Imagem do projeto login finalizado" >
-        <p><a href="https://ana-davila.github.io/projeto-login/" target="_blank" style="padding-top: 50px;">-Clique aqui e visite este projeto</a></p>
-        <p><a href="index.html">-Voltar</a></p>
+        <img src="imagens/img-login.png" alt="Imagem do projeto login finalizado"
+            title="Imagem do projeto login finalizado">
+        <p><a href="https://ana-davila.github.io/projeto-login/" target="_blank" style="padding-top: 50px;"
+                class="btn-projeto">-Clique aqui e visite este projeto</a></p>
+        <p><a href="index.html" class="btn-projeto">-Voltar</a></p>
     </main>
 </body>
 
