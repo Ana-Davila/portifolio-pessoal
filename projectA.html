@@ -7,6 +7,39 @@
     <title>Projeto Android</title>
     <style>
         @charset "UTF-8";
+        @media (max-width: 600px) {
+            .title {
+                padding: 10px;
+                max-width: 100vw;
+            }
+
+            .title {
+                font-size: 2rem;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .parag {
+                font-size: 1rem;
+                text-indent: 10px;
+                line-height: 20px;
+            }
+
+            .imgs {
+                width: 100%;
+                max-width: 350px;
+                height: auto;
+                margin: 10px auto;
+                display: block;
+            }
+
+            p a.imgs {
+                font-size: 1rem;
+                padding-top: 20px;
+                word-break: break-all;
+            }
+
+        }
 
         :root {
             --azul1: #011526;
@@ -27,6 +60,7 @@
         }
 
         body {
+            padding: 5px 0;
             background-color: var(--azul1);
             min-height: 100vh;
             margin-bottom: 50px;
@@ -39,7 +73,7 @@
             margin-right: auto;
         }
 
-        main .title{
+        main .title {
             font-size: 3rem;
             margin-top: 45px;
             margin-bottom: 45px;
@@ -60,12 +94,12 @@
             margin-left: auto;
             margin-right: auto;
         }
-        main img{
+
+        .imgs {
             display: block;
-            margin-top: 50px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 900px;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
         }
 
         main a {
@@ -79,8 +113,26 @@
             text-decoration: underline;
         }
 
-        min a:visited {
+        main a:visited {
             color: var(--azul2);
+        }
+
+        .btn-projeto {
+            display: block;
+            margin: 20px auto;
+            background: var(--azul4);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bold;
+            max-width: 350px;
+            transition: background 0.2s;
+        }
+
+        .btn-projeto:hover {
+            background: var(--azul2);
+            color: var(--azul5);
         }
     </style>
 </head>
@@ -93,7 +145,7 @@
             educacional combina aprendizado técnico com conteúdo informativo, apresentando de forma atraente a curiosa
             história por trás do mascote do sistema operacional Android.
         </p>
-            <br>
+        <br>
         <p class="parag">
             A página web foi cuidadosamente elaborada para praticar os fundamentos de desenvolvimento front-end, desde a
             estruturação semântica com HTML5 até técnicas avançadas de estilização com CSS3. O design responsivo garante
@@ -129,9 +181,10 @@
             conteúdo
             técnico pode ser apresentado de forma clara e visualmente atraente para o público geral.
         </p>
-        <img src="imagens/img-android.png" alt="imagem do projeto android finalizado">
-        <p><a href="https://ana-davila.github.io/projeto-android/" target="_blank" style="padding-top:50px ;">-Clique aqui e visite este projeto</a></p>
-        <a href="index.html">-Voltar</a>
+        <img src="imagens/img-android.png" alt="imagem do projeto android finalizado" class="imgs">
+        <p><a href="https://ana-davila.github.io/projeto-android/" target="_blank" class="btn-projeto">-Clique aqui e
+                visite este projeto</a></p>
+        <a href="index.html" class="btn-projeto">-Voltar</a>
     </main>
 </body>
 
