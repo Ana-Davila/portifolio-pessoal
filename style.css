@@ -3,7 +3,7 @@
 /* Cores do Portfólio */
 @media (max-width: 600px) {
     .imgs {
-        width: 100%;
+        width: 90%;
         height: auto;
     }
     section > form {
