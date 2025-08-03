@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* Estilo do Portfólio Pessoal de Ana Davila Kulek */
+/* Cores do Portfólio */
+@media (max-width: 600px) {
+    .imgs {
+        width: 100%;
+        height: auto;
+    }
+    section > form {
+        width: 90%;
+    }
+    .title {
+        font-size: 2rem;
+    }
+}
+:root{
+    --azul1: #011526;
+    --azul2: #011C40;
+    --azul3: #0A3B59;
+    --azul4: #206E8C;
+    --azul5: #50ABBF;
+}
+/* Reset básico */
+/* Reset básico para garantir consistência entre navegadores */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(to bottom, #01234f 0%, #010f1c 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+}
+/*Menu fixo*/
+header{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 1px 1px 5px var(--azul2);
+    background-color: var(--azul1);
+    height: 70px;
+    
+}
+header > nav> ul{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    list-style-type: none; 
+}
+header > nav >ul >li{
+    margin-top: 15px;
+    width: 150px;
+}
+header > nav >ul >li> a{
+    color: white;
+    font-weight: 800;
+    padding: 5px;
+    transition: 0.2s linear;
+}
+header > nav >ul >li> a:hover{
+    text-decoration: underline;
+    background-color: var(--azul4);
+    color: var(--azul1);
+    font-weight: 800;
+}
+/*Sobre Mim*/
+.SobreMim{
+    padding: 70px 0px 0px 30px;
+    color: white;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title{
+    font-size: 3rem;
+    padding-bottom: 40px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+.span{
+    color: var(--azul4);
+    text-transform: uppercase;
+}
+main section img.ana{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    width: 300px;  
+}
+main a{
+    color: var(--azul4);
+    font-weight: bold;
+}
+main a:hover{
+    text-decoration: underline;
+}
+main a:visited{
+    color: var(--azul4);
+}
+.parag{
+    text-transform: initial;
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 30px;
+}
+section h2{
+    text-align: center; 
+    padding: 20px 0px;
+}
+.imgs{
+    display: block;
+    margin: 20px 0px;
+    width: 500px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.linkI{
+    display: block;
+    text-align: center;
+}
+section ul li{
+    list-style-type: none;
+    margin: 25px 0px;
+}
+section > form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    background-color: #010f1c;
+    border-radius: 20px;
+}
+section > form > p{
+    border-radius: 20px;
+    align-items: center;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+}
+section > form > p > input{
+    height: 25px;
+}
+.btn{
+    padding: 12px;
+    width: 100px;
+    height: 35px;
+    background-color: var(--azul2);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: var(--azul4);
+    color: var(--azul1);
+    cursor: pointer;
+}
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#010e1a ;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+footer a{
+    padding: 0 10px;
+}
