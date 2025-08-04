@@ -85,16 +85,19 @@ header > nav >ul >li> a:hover{
     margin-left: auto;
     margin-right: auto;
 }
+/*Título da seção Sobre Mim que será padrão de todos os títulos*/
 .title{
     font-size: 3rem;
     padding-bottom: 40px;
     margin-bottom: 45px;
     text-align: center;
 }
+/*Adiciona cor a tag span e deixa em maiúsculo*/
 .span{
     color: var(--azul4);
     text-transform: uppercase;
 }
+/*Adiciona arredondamento a miha foto, display block, centralização e tamanho*/
 main section img.ana{
     display: block;
     margin-left: auto;
@@ -108,9 +111,11 @@ main a{
     color: var(--azul4);
     font-weight: bold;
 }
+/*Adiciona decoração ao passar o cursor em cima do link*/
 main a:hover{
     text-decoration: underline;
 }
+/*Deixa o link da mesma cor já definida ao link ser visitado*/
 main a:visited{
     color: var(--azul4);
 }
@@ -135,10 +140,12 @@ section h2{
     display: block;
     text-align: center;
 }
+/*Remove marcadores e adiciona espaçamento entre os itens da lista*/
 section ul li{
     list-style-type: none;
     margin: 25px 0px;
 }
+/*Estliza o formulário de contato centralizando e limitando a largura*/
 section > form{
     width: 400px;
     display: flex;
@@ -148,7 +155,9 @@ section > form{
     margin-bottom: 25px;
     background-color: #010f1c;
     border-radius: 20px;
+    text-align: center;
 }
+/*Espaçamento e arredondamento dos campos do formulário*/
 section > form > p{
     border-radius: 20px;
     align-items: center;
@@ -157,9 +166,37 @@ section > form > p{
     margin-left: auto;
     padding: 15px;
 }
+/*Altura dos inputs*/
 section > form > p > input{
     height: 25px;
+    border-radius: 12px;
+    border: none;
 }
+/*Adiciona animação para os campos de input*/
+section > form > p > input:hover{
+    border: 2px  solid var(--azul4);
+    outline: none;
+    box-shadow: 0 0 5px var(--azul4);
+    transition: 0.2s linear;
+}
+/*Estiliza a textarea do formulário*/
+section > form > p > textarea{
+    border-radius: 12px;
+    border: none;
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+/*Adiciona animação para a textarea*/
+section > form > p > textarea:hover{
+    border: 2px  solid var(--azul4);
+    outline: none;
+    box-shadow: 0 0 5px var(--azul4);
+    transition: 0.2s linear;
+}
+
+
+/*Botão do formulário: cor, tamanhho e arredondamento*/
 .btn{
     padding: 12px;
     width: 100px;
@@ -170,11 +207,16 @@ section > form > p > input{
     border: none;
     border-radius: 20px;
 }
+/*Adiciona efeito ao passar o cursor sobre o botão*/
 .btn:hover{
     background-color: var(--azul4);
     color: var(--azul1);
     cursor: pointer;
 }
+.span1{
+    font-size: 0.6rem;
+}
+/*Footer fixo na parte inferior, centrlizado e sem margens laterais*/
 footer{
     bottom: 0;
     left: 0;
@@ -190,6 +232,7 @@ footer{
     width: 100%;
     box-sizing: border-box;
 }
+/*Espaçamento entre os ícones do footer*/
 footer a{
     padding: 0 10px;
 }
