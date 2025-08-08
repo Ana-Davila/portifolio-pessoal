@@ -53,6 +53,7 @@ header{
     box-shadow: 1px 1px 5px var(--azul2);
     background-color: var(--azul1);
     height: 70px;
+    width: auto;
     
 }
 header > nav> ul{
