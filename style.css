@@ -2,6 +2,10 @@
 /* Estilo do Portfólio Pessoal de Ana Davila Kulek */
 /* Cores do Portfólio */
 @media (max-width: 600px) {
+    main{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     .imgs {
         width: 100%;
         max-width: 350px;

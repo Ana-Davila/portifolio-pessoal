@@ -5,7 +5,7 @@ var email = window.document.getElementById('iemail')
 form.addEventListener('submit', function(event){
     if(nome.value.trim().length === 0 ){
         event.preventDefault() //impede o envio do form
-        window.alert('[ERRO] nome inválido, tente novamente')
+        window.alert('[ERRO] nome inválido, tente novamente') //Mostra um alerta na tela caso
     }
     else if(email.value.trim().length === 0){
         event.preventDefault()
